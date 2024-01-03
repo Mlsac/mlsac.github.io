@@ -1,2 +1,19 @@
 /*no any thing*/
-//至少目前如此
+*{
+  font-size: 30px;
+  /*设置全局属性*/
+}
+html, body{
+  margin: 0;
+  padding: 0;
+  /*取消margin和padding*/
+}
+.dochdr{
+  display: flex;
+  /*Flex 布局*/
+  flex-wrap: nowrap;
+  /*不换行*/
+  text-align: left;
+  border: 1px solid darkgreen;
+}
+
