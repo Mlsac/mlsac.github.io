@@ -3,6 +3,9 @@
   font-size: 30px;
   /*设置全局属性*/
 }
+:root{
+  --commh: 40px;
+}
 html, body{
   margin: 0;
   padding: 0;
@@ -16,4 +19,13 @@ html, body{
   text-align: left;
   border: 1px solid darkgreen;
 }
-
+.hdrblk{
+  width: 10%;
+  height: var(--commh);
+  border: 1px solid darkgreen;
+  backgdound-color: green;
+  
+}
+.hdrblk:hover{
+  background-color: lightgreen;
+}
