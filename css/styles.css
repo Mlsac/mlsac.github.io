@@ -23,7 +23,7 @@ html, body{
   width: 10%;
   height: var(--commh);
   border: 1px solid darkgreen;
-  backgdound-color: green;
+  background-color: green;
   
 }
 .hdrblk:hover{
