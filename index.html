@@ -3,285 +3,87 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>工具和链接下载</title>
-        <link rel="stylesheet" href="libs/styles.css">
+        <title>下载列表</title>
+        <link rel="stylesheet" href="css/index.css">
+        <style>
+        </style>
     </head>
     <body>
-        <h1>下面是一些软件下载连接</h1>
-        <h3>使用Ctrl+F查找你需要的软件</h3>
-        <span class="cron">如果官网访问不了可以使用云盘的链接下载或者是使用镜像站</span>
-        <!-- <input type="text" id="sch" onkeydown="malloc(this.value)"> -->
-        <div class="box" id="7zip">
-            <h3>7-zip</h3>
-            <span>一款压缩软件</span>
-            <a href="about.html"><h3 style="color: white;background-color: black;border-bottom: 2px solid black;width:100px;">关于</h3></a>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网址链接</th>
-                        <th>下载链接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>官网</td>
-                        <td>
-                            <a href="https://7-zip.org/" target="_blank">https://7-zip.org/</a>
-                        </td>
-                        <td>
-                            <a href="https://7-zip.org/a/7z2404-x64.exe" target="_blank">https://7-zip.org/a/7z2404-x64.exe</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>SourceForge</td>
-                        <td>
-                            <a href="https://sourceforge.net/projects/sevenzip/files/7-Zip/">https://sourceforge.net</a>
-                        </td>
-                        <td><a href="https://sourceforge.net/projects/sevenzip/files/7-Zip/24.05/7z2405-x64.exe/download">https://sourceforge.net/projects/sevenzip/files/7-Zip/24.05/7z2405-x64.exe/download</a></td>
-                    </tr>
-                    <tr>
-                        <td>中文网</td>
-                        <td><a href="https://sparanoid.com/lab/7z/" target="_blank">https://sparanoid.com/lab/7z/</a></td>
-                        <td><a href="https://7-zip.org/a/7z2404-x64.exe" target="_blank">https://7-zip.org/a/7z2404-x64.exe</a></td>
-                    </tr>
-                    <tr>
-                        <td>123网盘</td>
-                        <td><a href="https://www.123pan.com/s/j89ijv-VtHb3.html" target="_blank">https://www.123pan.com/s/j89ijv-VtHb3.html</a></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="rtp">
+            <div class="dlg"><a href="about.html"><button style="width: 80px;height: 30px;">关于</button></a></div>
         </div>
-        <div class="box" id="geek">
-            <h3>Geek Uninstaller</h3>
-            <span>Windows上的卸载软件，分为免费和付费版本。</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网址链接</th>
-                        <th>下载链接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>官网</td>
-                        <td><a href="https://geekuninstaller.com/download" target="_blank">https://geekuninstaller.com/download</a></td>
-                        <td>
-                            <a href="https://geekuninstaller.com/geek.zip" targe="_blank">https://geekuninstaller.com/geek.zip</a>
-                            <br>
-                            <a href="https://geekuninstaller.com/geek.7z" target="_blank">https://geekuninstaller.com/geek.7z</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>123网盘</td>
-                        <td><a href="https://www.123pan.com/s/j89ijv-sOHb3.html" target="_blank">https://www.123pan.com/s/j89ijv-sOHb3.html</a></td>
-                        <td></td>
-                    </tr>
+        <h1>软件列表</h1>
+        <h3>使用Ctrl+F来查询你需要的东西</h3>
+        
+        <div class="mainbox">
+            <div class="box">
+                <div class="title">Visual Code</div>
+                <div class="keywords">vscode</div>
+                <div class="logo"><img src="pictures/logos/code.png"></div>
+                <!-- https://code.visualstudio.com/apple-touch-icon.png -->
+                <div class="url"><a href="pages/vscode.html">了解详情</a></div>
+            </div>
+            <div class="box">
+                <div class="title">7-zip</div>
+                <div class="keywords">7zip</div>
+                <div class="logo"><img src="pictures/logos/7z.ico"></div>
+                <div class="url"><a href="pages/7z.html">了解详情</a></div>
+            </div>
+            <div class="box">
+                <div class="title">Geek Uninstaller</div>
+                <div class="keywords"></div>
+                <div class="logo"><img src="pictures/logos/geek.png"></div>
+                <div class="url"><a href="pages/geek.html">了解详情</a></div>
+            </div>
+            <div class="box">
+                <div class="title">Steam</div>
+                <div class="keywords">蒸汽平台</div>
+                <div class="logo"><img src="pictures/logos/steam.png"></div>
+                <div class="url"><a href="pages/steam.html">了解详情</a></div>
+            </div>
 
-                </tbody>
-            </table>
+            <div class="box">
+                <div class="title">VirtualBox</div>
+                <div class="keywords">vbox</div>
+                <div class="logo"><img src="pictures/logos/vbox.png"></div>
+                <div class="url"><a href="pages/vbox.html">了解详情</a></div>
+            </div>
         </div>
-        <div class="box" id="steam">
-            <h3>Steam</h3>
-            <span>蒸汽平台(Steam游戏平台)</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>链接</th>
-                        <th>下载链接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>官网</td>
-                        <td>
-                            <a href="https://s.team" target="_blank">https://s.team</a>
-                            <br>
-                            <a href="https://store.steampowered.com" target="_blank">https://store.steampowered.com</a>
-                        </td>
-                        <td>
-                            <a href="https://media.st.dl.eccdnx.com/client/installer/SteamSetup.exe" target="_blank">https://media.st.dl.eccdnx.com/client/installer/SteamSetup.exe</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="mainbox">
+            <div class="box">
+                <div class="title">JetBrains IDE</div>
+                <div class="keywords">idea pycharm phpstorm </div>
+                <div class="logo"><img src="pictures/logos/jetbrains.svg"></div>
+                <div class="url"><a href="pages/jetbrains.html">了解详情</a></div>
+            </div>
+            <div class="box">
+                <div class="title">Google Android Studio</div>
+                <div class="keywords">android studio</div>
+                <div class="logo"><img src="pictures/logos/androidstudio.svg"></div>
+                <div class="url"><a href="pages/jetbrains.html#android-studio">了解详情</a></div>
+            </div>
+            <div class="box">
+                <div class="title">Python</div>
+                <div class="keywords">蟒蛇</div>
+                <div class="logo"><img src="pictures/logos/python.png"></div>
+                <div class="url"><a href="pages/python.html">了解详情</a></div>
+            </div>
+            <div class="box">
+                <div class="title">Vmware Workstation</div>
+                <div class="keywords"></div>
+                <div class="logo"><img src="pictures/logos/vmware.png"></div>
+                <div class="url"><a href="pages/vmware.html">了解详情</a></div>
+            </div>
         </div>
-        <div class="box">
-            <h3>VirtualBox</h3>
-            <span>Oracle开发的一款基于GPL协议的虚拟机软件</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网址链接</th>
-                        <th>下载链接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>官网</td>
-                        <td><a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">https://www.virtualbox.org/wiki/Downloads</a></td>
-                        <td><a href="https://download.virtualbox.org/virtualbox/7.0.18/VirtualBox-7.0.18-162988-Win.exe" target="_blank">https://download.virtualbox.org/virtualbox/7.0.18/VirtualBox-7.0.18-162988-Win.exe</a></td>
-                    </tr>
-                    <tr>
-                        <td>清华镜像站</td>
-                        <td><a href="https://mirrors.tuna.tsinghua.edu.cn/virtualbox/" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/virtualbox/</a></td>
-                        <td>
-                            <a href="https://mirrors.tuna.tsinghua.edu.cn/virtualbox/7.0.18/VirtualBox-7.0.18-162988-Win.exe" target="_blank">https://mirrors.tuna.tsinghua.edu.cn/virtualbox/7.0.18/VirtualBox-7.0.18-162988-Win.exe</a>
-                            <br>
-                            <a href="https://mirrors.tuna.tsinghua.edu.cn/virtualbox/7.0.18/VBoxGuestAdditions_7.0.18.iso" target="_blank">VBoxGuestAdditions(增强功能镜像)</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="box">
-            <h3>JetBrains IDEA</h3>
-            <span>JetBrains的IDE</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网站链接</th>
-                        <th>下载地址</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>IDE</td>
-                        <td><a href="https://www.jetbrains.com.cn/ides/#choose-your-ide" target="_blank">https://www.jetbrains.com.cn/ides/#choose-your-ide</a></td>
-                        <td>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="box">
-            <h3>Python</h3>
-            <span>Python编程语言</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网站链接</th>
-                        <th>下载链接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>官网</td>
-                        <td><a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/</a></td>
-                        <td><a href="https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe" target="_blank">https://www.python.org/ftp/python/3.12.3/python-3.12.3-amd64.exe</a></td>
-                    </tr>
-                    <tr>
-                        <td>中文网</td>
-                        <td><a href="https://python.p2hp.com/downloads/windows/index.html" target="_blank">https://python.p2hp.com</a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>123网盘</td>
-                        <td><a href="https://www.123pan.com/s/j89ijv-hcHb3.html" target="_blank">https://www.123pan.com/s/j89ijv-hcHb3.html</a></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="box">
-            <h3>Eclipse Java</h3>
-            <span>Eclipse的JavaIDE</span>
-            <br>
-            <span>你不用不代表别人不用</span>
-            <hr>
-            <span style="color: red;">个人建议是别装中文插件</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网站连接</th>
-                        <th>下载连接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>官网</td>
-                        <td><a href="https://www.eclipse.org/downloads/packages" target="_blank">https://www.eclipse.org/downloads/packages/</a></td>
-                        <td><a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2024-03/R/eclipse-java-2024-03-R-win32-x86_64.zip" target="_blank">下载连接</a></td>
-                    </tr>
-                    <tr>
-                        <td>清华镜像站</td>
-                        <td><a href="https://mirrors.tuna.tsinghua.edu.cn/eclipse/technology/epp/downloads/release/" target="_blank">清华镜像站</a></td>
-                        <td><a target="_blank" href="https://mirrors.tuna.tsinghua.edu.cn/technology/epp/downloads/release/2024-03/R/eclipse-java-2024-03-R-win32-x86_64.zip">eclipse-java-2024-03-R-win32-x86_64.zip</a></td>
-                    </tr>
-                    <tr>
-                        <td>Eclipse Java 中文插件</td>
-                        <td><a href="https://download.eclipse.org/technology/babel/babel_language_packs/latest/index.php" target="_blank">清华镜像站</a></td>
-                        <td><a href="https://mirrors.tuna.tsinghua.edu.cn/eclipse/technology/babel/babel_language_packs/latest/BabelLanguagePack-eclipse-zh_4.26.0.v20230220105658.zip" target="_blank">BabelLanguagePack-eclipse-zh_4.26.0.v20230220105658.zip</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="box">
-            <h3>Android Studio</h3>
-            <span>安卓开发IDE(基于Idea社区版)</span>
-            <table>
-                <thead>
-                    <tr>
-                        <th>网站</th>
-                        <th>网站连接</th>
-                        <th>下载连接</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>中文官网</td>
-                        <td><a href="https://developer.android.google.cn/studio?hl=zh-cn" target="_blank">https://developer.android.google.cn/studio?hl=zh-cn</a></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>中文插件</td>
-                        <td><a href="https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----/versions/stable" target="_blank">https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----/versions/stable</a></td>
-                        <td><a href="https://plugins.jetbrains.com/plugin/download?rel=true&updateId=495283" target="_blank">https://plugins.jetbrains.com/plugin/download?rel=true&updateId=495283</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="box">
-            <h3>Vmware 虚拟机</h3>
-            <span>被收购后对个人用户免费</span>
-            <br>
-            <span style="color: red;">不提供其他下载途径，需要请自行注册账号下载！</span>
-            <br>
-            <a style="color: black;" href="https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro" target="_blank">官方下载地址</a>
-        </div>
-        <div class="box">
-            <h3></h3>
-        </div>
-        <!---
-        
-    
-        <div class="box">
-            <h3></h3>
-            <span></span>
-            <table>
-                <thead>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
-        </div>
-        
-        --->
-        
-        <script>
-            /*
-            function malloc(arg){
-                console.log(arg);
-                return void 0;
-            } */
-        </script>
+        <!--
+            Module 
+
+            <div class="box">
+                <div class="title"></div>
+                <div class="keywords"></div>
+                <div class="logo"><img src="pictures/logos/"></div>
+                <div class="url"><a href="pages/">了解详情</a></div>
+            </div>
+        -->
     </body>
 </html>
