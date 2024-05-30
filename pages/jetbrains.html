@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh_cmn-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JetBrains IDE</title>
+        <link rel="shortcut icon" href="../pictures/logos/jetbrains.svg" id="picon" type="image/x-icon">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/mfs.css">
+    </head>
+    <body>
+        <h1></h1>
+        <h3>这里只提供免费的版本下载链接</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>说明</th>
+                    <th>网址</th>
+                    <th>下载链接</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>官网</td>
+                    <td><a href="https://www.jetbrains.com.cn/ides/#choose-your-ide">选择IDE</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Idea社区版</td>
+                    <td></td>
+                    <td><a href="https://www.jetbrains.com.cn/idea/download/download-thanks.html?platform=windows&code=IIC">ideaIC-2024.1.2.exe</a></td>
+                    <!-- https://download.jetbrains.com/idea/ideaIC-2024.1.2.exe -->
+                </tr>
+                <tr>
+                    <td>Pycahrm社区版</td>
+                    <td></td>
+                    <td><a href="https://www.jetbrains.com.cn/pycharm/download/download-thanks.html?platform=windows&code=PCC">pycharm-community-2024.1.2.exe</a></td>
+                    <!-- https://download.jetbrains.com/python/pycharm-community-2024.1.2.exe -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr id="android-studio">
+                    <td id="light">Android Studio</td>
+                    <td>
+                        <a href="https://developer.android.google.cn/studio?hl=zh-cn">https://developer.android.google.cn</a>
+                        <br>
+                        <a href="https://plugins.jetbrains.com/plugin/13710-chinese-simplified-language-pack----/versions/stable">https://plugins.jetbrains.com(插件)</a>
+                    </td>
+                    <td>
+                        <a href=""></a>
+                        <br>
+                        <a href="https://plugins.jetbrains.com/plugin/download?rel=true&updateId=495283">zh.233.287.zip(中文插件)</a>
+                    </td>
+                </tr>   
+            </tfoot>
+        </table>
+        <label class="istlab">安装</label>
+        <ul class="install">
+            <li>解压即用，双击bin下的idea64.exe，或者是安装</li>
+        </ul>
+        <script>
+            function cutfind(str,char) {
+                let index = str.indexOf("#");
+                if (index !== -1) {
+                    return str.substring(index+1);
+                } else {
+                    return "";
+                }
+            }
+            if(cutfind(window.location.href) == 'android-studio'){
+                // console.log(cutfind(window.location.href) );
+                blink('android-studio');
+                hidetbl();
+            }
+            function blink(light){
+                document.getElementById(light).style.color = "black";
+                document.getElementById(light).style.backgroundColor = "red";
+                return void 0;
+            }
+            function hidetbl(){
+                document.querySelector('thead').style.display = "none";
+                document.querySelector('tbody').style.display = "none";
+                document.querySelector('title').innerHTML = "Google Android Studio";
+                document.getElementById('picon').href = "../pictures/logos/androidstudio.svg";
+                document.querySelector('h3').innerHTML = "Google基于idea社区版开发的IDE";
+                document.querySelector('h1').innerHTML = "Google Android Studio";
+            }
+        </script>
+    </body>
+</html>
