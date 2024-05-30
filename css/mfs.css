@@ -1,0 +1,43 @@
+table,tr{
+    width: 100%;
+}
+tr th:first-child{
+    width: 20%;
+    background-color: lightskyblue;
+}
+tr th:nth-child(2){
+    width: 30%;
+    background-color: blue;
+
+}
+tr th:last-child{
+    width: 50;
+    background-color: blueviolet;
+}
+tr:nth-child(odd){
+    background-color: limegreen;
+    
+}
+tr:nth-child(even){
+    background-color: cornflowerblue;
+}
+tr td,tr td a{
+    color: white;
+}
+
+th{
+    height: 50px;
+    font-size: 30px;
+}
+td{
+    height: 30px;
+    font-size: 20px;
+}
+.istlab{
+    font-size: 40px;
+
+}
+.install{
+    font-size: 15px;
+    margin-left: 20px;
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.mainbox{
+    height: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: cyan;
+    justify-content: center;
+}
+.box{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid blue;
+    background-color: #0aa4ae;
+}
+.box:hover{
+    background-color: chartreuse;
+    animation: 2s biged;
+}
+
+@keyframes biged {
+   
+    50%{
+        background-color: lightgreen;
+        
+    }
+    
+}
+.box *{
+    text-align: center;
+    color: white;
+}
+.keywords{
+    color: #0aa4ae;
+    cursor: default;
+    height: 12px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.rtp{
+    position: relative;
+}
+   
+.dlg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
